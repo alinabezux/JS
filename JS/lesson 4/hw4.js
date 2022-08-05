@@ -330,4 +330,65 @@
 //     }
 // }
 
+//стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+let books = [
+    {
+        name: 'Alice in Wonderland',
+        pages: 256,
+        author: ['Lewis Carroll'],
+        genre: ['Children\'s literature', 'fantasy', 'literature of the absurd']
+    },
+    {
+        name: 'Cinderella',
+        pages: 134,
+        author: ['Charles Perrault', 'Brothers Grimm'],
+        genre: ['Fairy tale', 'Children\'s literature']
+    },
+    {
+        name: 'Harry Potter',
+        pages: 452,
+        author: ['Joanne Rowling'],
+        genre: ['fantasy']
+    }
+]
+// -знайти найбльшу книжку.
+// let max = books[0];
+// for (const book of books) {
+//     if (book.pages > max.pages) {
+//         max = book;
+//     }
+// }
+// console.log(max.name);
+
+// - знайти книжку/ки з найбільшою кількістю жанрів
+// let max = books[0];
+// for (const book of books) {
+//     if (book.genre.length > max.genre.length) {
+//         max = book;
+//     }
+// }
+// console.log(max.name);
+
+// - знайти книжку/ки з найдовшою назвою
+// let max = books[0];
+// for (const book of books) {
+//     if (book.name.length > max.name.length) {
+//         max = book;
+//     }
+// }
+// console.log(max.name);
+
+// - знайти книжку/ки які писали 2 автори
+// for (const book of books) {
+//     if (book.author.length === 2) {
+//         console.log(book.name);
+//     }
+// }
+
+// - знайти книжку/ки які писав 1 автор
+// for (const book of books) {
+//     if (book.author.length === 1) {
+//         console.log(book.name);
+//     }
+// }
 
