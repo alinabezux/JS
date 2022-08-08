@@ -109,3 +109,128 @@
 // }
 //
 // console.log(sum([10, 2, 3]));
+
+//--------------------------------------------------------------------------------------------------------------------
+//ADDITIONAL
+//Всі функції повинні бути описані стрілочним типом!!!!
+
+// - створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
+// let minNum = (array) => {
+//     let min = array[0];
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] < min) {
+//             min = array[i];
+//         }
+//     }
+//     console.log(min);
+// }
+// minNum([1, 5, -10]);
+
+// - створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
+// let maxNum = (array) => {
+//     let max = array[0];
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] > max) {
+//             max = array[i];
+//         }
+//     }
+//     console.log(max);
+// }
+// maxNum([1, 5, -10]);
+
+// - створити функцію яка повертає найбільше число з масиву
+// let maxNum = (array) => {
+//     let max = array[0];
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] > max) {
+//             max = array[i];
+//         }
+//     }
+//     return max;
+// }
+// console.log(maxNum([1, 5, -10]));
+
+// - створити функцію яка повертає найменьше число з масиву
+// let minNum = (array) => {
+//     let min = array[0];
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] < min) {
+//             min = array[i];
+//         }
+//     }
+//     return min;
+// }
+// console.log(minNum([1, 5, -10]));
+
+// - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
+// let sumNums = (array) => {
+//     let sum = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         sum = sum + array[i];
+//     }
+//     return sum;
+// }
+//
+// console.log(sumNums([10, 2, 3]));
+
+// - Дано натуральное число n. Выведите все числа от 1 до n.
+// let writeNums = (n) => {
+//     for (let i = 1; i <= n; i++) {
+//         console.log(i);
+//     }
+// }
+// writeNums(10);
+
+// - Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания, если A < B, или в порядке убывания в противном случае.
+// let AtoB = (a, b) => {
+//     if (a < b) {
+//         for (let i = a; i <= b; i++) {
+//             console.log(i);
+//         }
+//     } else if (b < a) {
+//         for (let i = a; i >= b; i--) {
+//             console.log(i);
+//         }
+//     } else console.log(a);
+//
+// }
+// AtoB(5, 1);
+
+// -   функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+//   EXAMPLE:
+//   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
+//   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
+//   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
+// let foo = (array, i) => {
+//     let temp = array[i];
+//     array[i] = array[i + 1];
+//     array[i + 1] = temp;
+//     return array;
+// }
+// console.log(foo([1, 2, 3, 4], 2));
+
+// - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+// Двожина масиву від 2 до 100
+// EXAMPLE:
+// [1,0,6,0,3] => [1,6,3,0,0]
+// [0,1,2,3,4] => [1,2,3,4,0]
+// [0,0,1,0]   => [1,0,0,0]
+// const arr = [1, 0, 5, 2, 0, 0, 1];
+// let foo = (array) => {
+//     let res = [];
+//     let counter = 0;
+//     let j = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i] === 0) {
+//             counter++;
+//         } else {
+//             res[j++] = array[i];
+//         }
+//     }
+//     for (let i = 0; i < counter; i++) {
+//         res[res.length++] = 0;
+//     }
+//
+//     return res;
+// }
+// console.log(foo(arr));
