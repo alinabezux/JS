@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .item-wrap {
@@ -19,6 +18,7 @@
     padding-right: 15px;
     padding-bottom: 5px;
     padding-left: 15px;
+
     background: gainsboro;
     border-radius: 15px;
 }
@@ -48,7 +48,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     height: 500px;
-
 }
 
 .postDiv {
@@ -61,7 +60,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
 }
 
 .postButton {
