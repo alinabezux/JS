@@ -1,0 +1,45 @@
+* {
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Century Gothic", sans-serif;
+}
+
+.currentPost {
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    width: 700px;
+    background: #7c7cff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.commentsDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+
+    margin: 10px;
+}
+
+.comment {
+    width: 20%;
+
+    font-size: 12px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    border: 3px solid #6158b6;
+    border-radius: 20px;
+
+    margin: 5px;
+    padding: 15px;
+}
+
+
